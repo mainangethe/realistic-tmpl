@@ -33,8 +33,8 @@ a {
   background-color: #e0e0e0;
 }
 
-.fl_left { float: left; }
-.fl_right { float: right; }
+.float_left { float: left; }
+.float_right { float: right; }
 
 /* 
   Wrapper Styles
@@ -60,7 +60,9 @@ div.wrapper h6 {
 #header,
 #top-bar,
 #top-nav,
-.container {
+.container,
+#footer,
+#copyright {
   display: block;
   position: relative;
   width: 960px;
@@ -119,3 +121,69 @@ div.wrapper h6 {
   color: #a3443e;
   background-color: #fff;
 }
+
+/*
+  Footer Styles
+*/
+#footer {
+  padding: 20px 0;
+  border: 1px solid #999; border-width: 1px 0;
+}
+#footer a {
+  color: #787878;
+  background-color: #e0e0e0;
+}
+#footer h2,
+#footer p,
+#footer ul,
+#footer a {
+  margin: 0; padding: 0;
+  list-style: none;
+  font-weight: normal; line-height: normal;
+}
+#footer h2 {
+  color: #999;
+  background-color: #e0e0e0;
+  margin-bottom: 10px; padding-bottom: 6px;
+  border-bottom: 1px dotted #585858;
+}
+#footer .latest-gallery {
+  display: block;
+  float: left;
+  width: 420px;
+  margin: 0; padding: 0;
+}
+  #footer .latest-gallery li {
+    display: block;
+    float: left;
+    width: 80px; height: 80px;
+    margin: 15px 13px 0 0; padding: 5px;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #b4b4b4;
+  }
+#footer .footer-box {
+  display: block;
+  float: left;
+  width: 220px;
+  margin: 0 0 0 50px; padding: 0;
+}
+  #footer .footer-box a:hover {
+    color: #a3443e; text-decoration: underline;
+  }
+  #footer .footer-box li { margin: 22px 0 0 0; }
+    #footer .footer-box li.last { margin-bottom: 0; }
+#footer div.last,
+#footer .latet-gallery li.last { margin-right: 0; }
+
+/* Copyright */
+#copyright { 
+  padding: 15px 0;
+  font-size: 12px;
+  border-top: 1px solid #999;
+}
+#copyright a {
+  color: #787878;
+  background-color: #e0e0e0;
+}
+#copyright p { margin: 0; padding: 0; }
