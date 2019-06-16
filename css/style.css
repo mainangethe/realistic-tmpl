@@ -6,6 +6,7 @@
   Author URL: https://www.mradi.co.ke
 */
 
+@import url("forms.css");
 @import url("");
 
 html { overflow-y: scroll; }
@@ -17,12 +18,21 @@ body {
   background-color: #e0e0e0;
 }
 
+.clear { clear: both; }
+br.clear {
+  clear: both;
+  margin-top: -15px;
+}
+
 a {
   outline: none;
   text-decoration: none;
   color: #a3443e;
   background-color: #e0e0e0;
 }
+
+.fl_left { float: left; }
+.fl_right { float: right; }
 
 /* 
   Wrapper Styles
@@ -45,7 +55,8 @@ div.wrapper h6 {
 /* 
   General Styles 
 */
-#header {
+#header,
+#top-bar {
   display: block;
   position: relative;
   width: 960px;
@@ -71,5 +82,19 @@ div.wrapper h6 {
   margin-top: -20px;
   font-size: 20px;
   color: #4a4a4a;
+  background-color: #e0e0e0;
+}
+
+/*
+  Top-bar Styles
+*/
+#top-bar {
+  padding: 15px 0;
+  border-bottom: 1px solid #999;
+}
+#top-bar .fl_left { margin: 8px 0 0 0; padding: 0; }
+#top-bar .fl_left,
+#top-bar .fl_left a {
+  color: #999;
   background-color: #e0e0e0;
 }

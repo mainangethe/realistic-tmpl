@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/*
+  Template Name: Realistic
+  Author: Ng'ethe Maina
+  Author URL: https://www.mradi.co.ke
+*/
+
+form,
+fieldset,
+legend {
+  margin: 0; padding: 0;
+  border: none;
+}
+legend { display: none; }
+input { font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; }
+
+/* Search Form */
+#top-bar input {
+  display: block;
+  float: left;
+  width: 155px;
+  margin: 0 5px 0 0; padding: 5px;
+  color: #565656;
+  background-color: #ebebeb;
+  border: 1px solid #c3c3c3;
+  font-size: 12px;
+}
+
+#top-bar input#go {
+  width: 68px; height: 26px;
+  margin: 0;
+  padding: 4px 0;
+  text-transform: uppercase; font-weight: bold;
+  color: #fff;
+  background-color: #565656;
+  border-color: #c3c3c3;
+  cursor: pointer;
+}
