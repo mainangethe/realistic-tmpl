@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+  Template Name: Realistic
+  Author: Ng'ethe Maina
+  Author URL: https://www.mradi.co.ke
+*/
+
+#gallery {
+  display: block;
+  position: relative;
+  margin: 0 auto; padding-bottom: 10px;
+  width: 900px;
+}
+  #gallery ul {
+    margin: 0; padding: 0;
+    list-style: none;
+  }
+  #gallery li {
+    display: block;
+    float: left;
+    width: 280px;
+    margin: 0 30px 20px 0; padding: 0;
+  }
+  #gallery li a img {
+    display: block;
+    margin: 0; padding: 0;
+    width: 260px; height: 130px;
+    border: 10px solid #e0e0e0;
+  }
+    #gallery li a:hover img { border-color: #b4b4b4; }
+    #gallery li.last { margin-right: 0; }

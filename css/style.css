@@ -9,6 +9,7 @@
 @import url("forms.css");
 @import url("navigation.css");
 @import url("homepage.css");
+@import url("gallery.css");
 @import url("");
 
 html { overflow-y: scroll; }
