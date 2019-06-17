@@ -60,6 +60,7 @@ div.wrapper h6 {
 #header,
 #top-bar,
 #top-nav,
+#breadcrumb,
 .container,
 #footer,
 #copyright {
@@ -105,6 +106,19 @@ div.wrapper h6 {
   background-color: #e0e0e0;
 }
 
+/*
+  Breadcrumb Styles
+*/
+#breadcrumb {
+  padding: 15px 0;
+  border: 1px solid #999; border-width: 1px 0;
+}
+  #breadcrumb ul {
+    margin: 0; padding: 0;
+    list-style: none;
+  }
+    #breadcrumb ul li { display: inline; }
+      #breadcrumb ul li.current-page a { text-decoration: underline; }
 /*
   Content Styles
 */
