@@ -10,7 +10,7 @@
 @import url("navigation.css");
 @import url("homepage.css");
 @import url("gallery.css");
-@import url("");
+@import url("portfolio.css");
 
 html { overflow-y: scroll; }
 
