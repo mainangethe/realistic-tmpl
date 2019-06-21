@@ -37,3 +37,30 @@ input { font-size: 12px; font-family: Georgia, 'Times New Roman', Times, serif; 
   border-color: #c3c3c3;
   cursor: pointer;
 }
+
+/* Content area form */
+.container #respond {
+  display: block;
+  width: 100%;
+}
+  .container #respond input {
+    width: 170px; height: 25px;
+    margin: 5px 5px 0 0; padding: 5px;
+    border: 1px solid #ccc;
+  }
+  .container #respond textarea {
+    width: 98%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    overflow: auto;
+  }
+  .container #respond p { margin: 5px 0; }
+  .container #respond #submit,
+  .container #respond #reset {
+    margin: 0; padding: 5px;
+    height: 35px;
+    color: #666;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }

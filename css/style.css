@@ -7,6 +7,7 @@
 */
 
 @import url("forms.css");
+@import url("tables.css");
 @import url("navigation.css");
 @import url("homepage.css");
 @import url("gallery.css");
@@ -21,6 +22,7 @@ body {
   background-color: #e0e0e0;
 }
 
+.hidden { display: none; }
 .clear { clear: both; }
 br.clear {
   clear: both;
@@ -34,8 +36,30 @@ a {
   background-color: #e0e0e0;
 }
 
-.float_left { float: left; }
-.float_right { float: right; }
+.float_left,
+.img_left { float: left; }
+.float_right,
+.img_right { float: right; }
+
+img {
+  display: block;
+  margin: 0; padding: 0; 
+  border: none;
+}
+.img_left,
+.img_right {
+  padding: 5px;
+  border: 1px solid #c7c5c8;
+}
+.img_left {
+  margin: 0 8px 8px 0;
+  clear: left;
+}
+.img_right {
+  margin: 0 0 8px 8px;
+  clear: right;
+}
+
 
 /* 
   Wrapper Styles
@@ -120,6 +144,8 @@ div.wrapper h6 {
   }
     #breadcrumb ul li { display: inline; }
       #breadcrumb ul li.current-page a { text-decoration: underline; }
+
+
 /*
   Content Styles
 */
@@ -132,10 +158,149 @@ div.wrapper h6 {
   color: #999;
   background-color: #fff;
 }
-.white-box a {
-  color: #a3443e;
-  background-color: #fff;
+  .white-box a {
+    color: #a3443e;
+    background-color: #fff;
+  }
+.content {
+  display: block;
+  float: left;
+  width: 600px;
 }
+/* Comment */
+#comments { margin-bottom: 40px; }
+  #comments .comment-list { margin: 0; padding: 0; }
+  #comments ul.comment-list {
+      margin: 0; padding: 0;
+      list-style: none;
+    }
+  #comments li.comment_odd,
+  #comments li.comment_even {
+    margin: 0 0 10px 0; padding: 15px;
+    list-style: none;
+  }
+  #comments li.comment_odd {
+    color: #666;
+    background-color: #f7f7f7;
+  }
+    #comments li.comment_odd a {
+      color: #a3443e;
+      background-color: #f7f7f7;
+    }
+  #comments li.comment_even {
+    color: #666;
+    background-color: #e8e8e8;
+  }
+    #comments li.comment_even a {
+      color: #a3443e;
+      background-color: #e8e8e8;
+    }
+  #comments .author .name { font-weight: bold; }
+  #comments .submission-date { font-size: smaller; }
+    #comments .comment-list p {
+      margin: 10px 5px 10px 0; padding: 0;
+      font-weight: normal; text-transform: none;
+    }
+    #comments .comment-list li .avatar {
+      float: right;
+      border: 1px solid #eee;
+      margin: 0 0 0 10px;
+    }
+/* Sidebar Column Styes */
+.column {
+  display: block;
+  float: right;
+  width: 270px;
+}
+.column .holder,
+.column #featured {
+  display: block;
+  width: 270px;
+  margin-bottom: 20px;
+}
+  .column .holder h2.title {
+    display: block;
+    width: 100%; height: 65px;
+    margin: 0; padding: 15px 0 0 0;
+    border-bottom: 1px dotted #999;
+    font-size: 20px; line-height: normal;
+  }
+  .column .holder h2.title img {
+    float: left;
+    margin: -15px 8px 0 0; padding: 5px;
+    border: 1px solid #999;
+  }
+  .column div.image_holder {
+    display: none;
+    width: 260px;
+    margin: 0 0 10px 0; padding: 4px;
+    border: 1px solid #999;
+  }
+  .column .holder p.read-more {
+    display: block;
+    width: 100%;
+    font-weight: bold; text-align: right; line-height: normal;
+  }
+ /* Sidebar Featured Styles */
+ .column #featured ul,
+ .column #featured h2,
+ .column #featured p {
+  margin: 0; padding: 0;
+  list-style: none;
+  color: #666;
+  background-color: #f9f9f9;
+ } 
+ .column #featured a {
+   color: #a3443e;
+   background-color: #f9f9f9;
+ }
+ .column #featured li {
+   display: block;
+   width: 220px;
+   margin: 0; padding: 20px 25px;
+   color: #666;
+   background-color: #f9f9f9;
+ }
+  .column #featured li p.image_holder {
+    display: block;
+    width: 210px; height: 90px;
+    margin: 20px 0 15px 0; padding: 4px;
+    border: 1px solid #ccc;
+  }
+  .column #featured li h2 {
+    margin: 0; padding: 0 0 8px 0;
+    font-weight: normal; font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: normal;
+    border-bottom: 1px dotted #999;
+  }
+  .column #featured p.read-more {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    font-weight: bold; text-align: right;  line-height: normal;
+  }
+.column .latest-news {
+  display: block;
+  width: 100%;
+  margin: 0; padding: 0;
+  list-style: none;
+}
+  .column .latest-news li {
+    display: block;
+    width: 100%; height: 99px;
+    margin: 0 0 11px 0; padding: 0 0 21px 0;
+    border-bottom: 1px solid #c7c5c8;
+    overflow: hidden;
+  }
+  .column .latest-news li.last { margin-bottom: 0; }
+  .column .latest-news p { display: inline; }
+  .column .latest-news img { 
+    float: left;
+    margin: 0 10px 0 0; padding: 4px;
+    border: 1px solid #c7c5c8;
+    clear: left;
+  }
+
 
 /*
   Footer Styles
