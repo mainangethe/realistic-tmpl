@@ -1,5 +1,5 @@
 # REALISTIC 
----
+
 > Free Template by OS Templates.
 
 ![Realistic Theme Index image](images/screenshot-index.png)
@@ -15,6 +15,7 @@ Introducing Realistic - a business/corporate HTML 4 template.
 4. Gallery
 5. Portfolio
 6. Demo stock images from Unsplash.com
+7. Documentation available.
 
 ## Item Tags
 * Business
